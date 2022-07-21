@@ -20,6 +20,13 @@
     <dependencies>
 
         <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>5.1.1</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
             <groupId>org.elasticsearch.client</groupId>
             <artifactId>elasticsearch-rest-high-level-client</artifactId>
             <version>7.17.5</version>
@@ -69,6 +76,12 @@
             <artifactId>slf4j-simple</artifactId>
             <version>1.7.29</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>5.1.1</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
     <build>

@@ -42,7 +42,7 @@ public class MyAccountPageLogic extends BaseLogic {
         return this;
     }
 
-    @Step("Click on close button after confirmation unsubscribe process")
+    @Step("Click close button after confirmation unsubscribe process")
     public MyAccountPageLogic clickCloseBtnAfterConfirmUnsub() throws InterruptedException {
         driver.findElement(closeBtnOnBox).click();
         return this;

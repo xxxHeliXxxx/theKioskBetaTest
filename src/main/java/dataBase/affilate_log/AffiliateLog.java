@@ -4,7 +4,8 @@ import java.util.Objects;
 
 public class AffiliateLog {
 
-    public AffiliateLog () {}
+    public AffiliateLog() {
+    }
 
 
     public AffiliateLog(String userMsisdn, String event, String status) {

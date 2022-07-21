@@ -1,10 +1,9 @@
 package dataBase.b_processes;
 
 
-
 import java.util.Objects;
 
-public class BProcesses  {
+public class BProcesses {
     public BProcesses() {
     }
 

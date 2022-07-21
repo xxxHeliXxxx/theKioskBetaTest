@@ -27,11 +27,10 @@ import org.joda.time.DateTime;
 import java.text.SimpleDateFormat;
 
 
-
 public class ElasticSearch {
 
 
-    public static boolean LogExistByType(String logType, String clientName){
+    public static boolean LogExistByType(String logType, String clientName) {
         SearchResponse searchResponse = null;
         try {
             final CredentialsProvider credentialsProvider = new BasicCredentialsProvider();
@@ -71,12 +70,11 @@ public class ElasticSearch {
             searchResponse = highClient.search(searchRequest, RequestOptions.DEFAULT);
 
             SearchHits hits = searchResponse.getHits();
-            for (SearchHit hit: hits) {
+            for (SearchHit hit : hits) {
                 String result = hit.getSourceAsString();
-                if (result.contains(logType)){
+                if (result.contains(logType)) {
                     return true;
-                }
-                else{
+                } else {
                     return false;
                 }
             }
